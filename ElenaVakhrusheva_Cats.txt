@@ -1,0 +1,70 @@
+// дефолтная кошка https://cdn.imgbin.com/0/15/10/imgbin-cat-kitten-dog-art-hello-kitty-cat-k3FBwdBZtuv8NUcF5EP8A4ePg.jpg
+
+{
+    "message": "ok",
+    "data": [
+        {
+            "_id": "634eb873fff953ad9c309a3f",
+            "id": 2,
+            "name": "Пакет",
+            "__v": 0,
+            "age": 1
+        },
+        {
+            "_id": "634ec8a1fff953ad9c30de11",
+            "id": 1,
+            "name": "Дуська",
+            "age": 2,
+            "img_link": "https://animals-land.ru/wp-content/uploads/2021/09/1617898501_31-p-cherno-belaya-koshka-poroda-38.jpg",
+            "__v": 0
+        },
+        {
+            "_id": "634ec8e6fff953ad9c30de16",
+            "id": 3,
+            "name": "Василий",
+            "age": 3,
+            "img_link": "https://cdn.iportal.ru/preview/e1forum/photo/9d6376280aaec1ead29d4599a7d7234e055d71fb_700_700.jpg",
+            "__v": 0
+        },
+        {
+            "_id": "634ec961fff953ad9c30de1a",
+            "id": 4,
+            "name": "Беляш",
+            "age": 8,
+            "img_link": "https://haski-mana.ru/wp-content/uploads/9/1/0/91052d5aa74c4110d55bf60d50b43b14.jpeg",
+            "__v": 0
+        },
+        {
+            "_id": "634ec9abfff953ad9c30de1f",
+            "id": 5,
+            "name": "Наполеон",
+            "age": 8,
+            "img_link": "https://www.demokot.ru/photo/img/kot-napoleon-foto-14.jpg",
+            "__v": 0
+        },
+        {
+            "_id": "634ec9fcfff953ad9c30de22",
+            "id": 6,
+            "name": "Клеопатра",
+            "age": 4,
+            "img_link": "https://vplate.ru/images/article/orig/2019/03/chem-i-kak-kormit-abissinskih-koshek-i-kotov.jpg",
+            "__v": 0
+        },
+        {
+            "_id": "634eca3dfff953ad9c30de25",
+            "id": 8,
+            "name": "Тигр",
+            "age": 1,
+            "img_link": "https://koshkiny.ru/assets/content/images/bengalskaya-koshka/21-bengalskie-kotiata-min.jpg",
+            "__v": 0
+        },
+        {
+            "_id": "634ecae2fff953ad9c30de31",
+            "id": 7,
+            "name": "Марс",
+            "age": 3,
+            "img_link": "https://venusian.ru/wp-content/uploads/DSC_1418_1.jpg",
+            "__v": 0
+        }
+    ]
+}
