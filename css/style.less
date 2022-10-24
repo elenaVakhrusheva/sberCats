@@ -84,8 +84,16 @@
       line-height: 50px;
       box-shadow: 0 0 5px 0 silver;
       font-size: 32px;
-    text-align: center;
-    cursor: pointer;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        background: #ededed;
+      }
+
+      &:active {
+        box-shadow: 0 0 0 5px #fff;
+      }
     }
 
     .card {
@@ -701,4 +709,46 @@ button[type="submit"] {
   &:hover {
     background:@base-bg-dark-color;
   }
+}
+
+
+
+@media  (max-width:768px) {
+  .container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+      width: 150px;
+      height: 150px;
+  }
+  
+}
+
+@media (max-width:500px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 70px;
+  }
+
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .dashboard {
+    position: fixed;
+    top: 0;
+    border-radius: 0;
+    flex-direction: row;
+    width: 100%;
+    background: #8e8da3d1;
+  }
+
+  .wrap {
+    flex-direction: column;
+  }
+  
 }
