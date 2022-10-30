@@ -2,7 +2,7 @@ import Api from "./api.js"; // ./ - указатель на текущую па�
 
 let user = document.cookie;
 console.log("u", user);
-if (!user) { 
+if (!user) {
     user = prompt("Пользователь не найден, укажите имя пользователя", "elenaVakhrusheva");
     document.cookie = `user=${user}`;
 } else {
@@ -10,8 +10,6 @@ if (!user) {
 }
 
 const api = new Api(user);
-
-// "user=lekso4ka;goods=apple,orange,pinapple;date=2022-10-11"
 
 const container = document.querySelector(".container");
 const btn = document.querySelector(".dashboard").firstElementChild;
@@ -26,31 +24,29 @@ console.log(catsList);
 
 const addForm = document.forms.add;
 addForm.addEventListener("submit", function(e) {
-    addCat(e, api, Array.from(popupList));
+    addCat(e, api, Array.from(popupList), catsList);
 });
 
-if(!catsList) {
+if (!catsList) {
+    api.getCats()
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if (data.message === "ok") {
+                localStorage.setItem("cats", JSON.stringify(data.data));
+                data.data.forEach(cat => {
+                    createCard(cat, container, Array.from(popupList));
+                });
+            } else {
+                showPopup(Array.from(popupList), "info", data.message);
+            }           
+        });
 
-api.getCats()
-    .then(res => res.json())
-    .then(data => {
-        console.log(data);
-        if (data.message === "ok") {
-            localStorage.setItem("cats", JSON.stringify(data.data));
-            data.data.forEach(cat => {
-                createCard(cat, container, Array.from(popupList));
-            });
-        } else {
-            showPopup(Array.from(popupList), "info", data.message);
-        }
-        // showPopup(Array.from(popupList), "info", data.message);
-    });
 } else {
     catsList.forEach(cat => {
-                createCard(cat, container, Array.from(popupList));
-            });
+        createCard(cat, container, Array.from(popupList));
+    });
 }
-
 
 popupList.forEach(p => {
     p.firstElementChild.addEventListener("click", e => {
@@ -73,3 +69,4 @@ popBox.addEventListener("click", function(e) {
         })
     }
 });
+

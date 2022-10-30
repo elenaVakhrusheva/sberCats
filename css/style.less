@@ -46,8 +46,7 @@
     
     }
 
-    .dashboard,
-    .container,
+     
     .btn,
     .card,
     .card__pic,
@@ -92,7 +91,7 @@
       }
 
       &:active {
-        box-shadow: 0 0 0 5px #fff;
+        box-shadow: 0 0 0 2px #fff;
       }
     }
 
@@ -252,14 +251,7 @@
       border: 1px solid rgb(255,255,255);
       border-radius: 8px;
     }
-
-    input[type=text]::placeholder {
-      
-    }
-    input[type=text]:placeholder-shown {
-      
-
-    }
+ 
 
  /*
 @track-color: #424242;
@@ -713,6 +705,10 @@ button[type="submit"] {
 
 
 
+
+
+/*  ==== media ==== */
+
 @media  (max-width:768px) {
   .container {
       grid-template-columns: repeat(2, 1fr);
@@ -726,6 +722,9 @@ button[type="submit"] {
 }
 
 @media (max-width:500px) {
+  body {
+    margin: 0;
+  }
   .container {
     grid-template-columns: 1fr;
     margin: 0 auto;

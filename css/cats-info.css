@@ -1,0 +1,108 @@
+/* line 1, cats-info.less */
+.cat-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+/* line 8, cats-info.less */
+.cat-info[contentEditable="true"] {
+  -webkit-box-shadow: 0 0 1px 1px var(--accent-color);
+          box-shadow: 0 0 1px 1px var(--accent-color);
+  outline: none;
+}
+/* line 12, cats-info.less */
+.cat-info[contentEditable="true"]:focus {
+  -webkit-box-shadow: 0 0 1px 1px var(--primary-color);
+          box-shadow: 0 0 1px 1px var(--primary-color);
+  outline: none;
+}
+/* line 20, cats-info.less */
+.cat-info__edited_hidden {
+  display: none;
+}
+/* line 28, cats-info.less */
+.cat-info__saved_hidden {
+  display: none;
+}
+/* line 34, cats-info.less */
+.cat-info__deleted {
+  top: 60px;
+}
+/* line 39, cats-info.less */
+.cat-info__edite,
+.cat-info__saved {
+  top: 20px;
+}
+/* line 44, cats-info.less */
+.cat-info__edite,
+.cat-info__saved,
+.cat-info__deleted {
+  border-radius: 10px;
+  padding: 6px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+}
+/* line 57, cats-info.less */
+.cat-info__image {
+  width: 100%;
+  aspect-ratio: 1.33333333;
+  -o-object-fit: cover;
+     object-fit: cover;
+  grid-row: 0.2;
+}
+/* line 64, cats-info.less */
+.cat-info__id {
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  background: #2c218d;
+  border-radius: 10px;
+  color: #fff;
+}
+/* line 83, cats-info.less */
+.cat-info__favorite {
+  border: none;
+  border-color: transparent;
+  cursor: pointer;
+  color: #8d8787;
+}
+/* line 89, cats-info.less */
+.cat-info__favorite_active {
+  color: #ca2222;
+}
+/* line 97, cats-info.less */
+.cat-info__age-val {
+  padding: 5px;
+}
+/* line 107, cats-info.less */
+.cat-info__desc {
+  grid-column: -1;
+  font-style: 18px;
+  padding: 5px;
+}
+/* line 114, cats-info.less */
+.cat-info__rate {
+  white-space: nowrap;
+}
+/* line 122, cats-info.less */
+.fa-solid {
+  font-weight: 900;
+}

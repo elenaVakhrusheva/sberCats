@@ -50,16 +50,14 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 49, style.less */
-.dashboard,
-.container,
+/* line 50, style.less */
 .btn,
 .card,
 .card__pic,
 .popup {
   border-radius: 8px;
 }
-/* line 58, style.less */
+/* line 57, style.less */
 .dashboard {
   background: #ededed;
   display: -webkit-box;
@@ -75,7 +73,7 @@
   padding: 20px;
   gap: 20px;
 }
-/* line 67, style.less */
+/* line 66, style.less */
 .container {
   background: #444360;
   height: 100%;
@@ -90,7 +88,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-/* line 81, style.less */
+/* line 80, style.less */
 .btn {
   height: 50px;
   width: 50px;
@@ -101,16 +99,16 @@
   text-align: center;
   cursor: pointer;
 }
-/* line 90, style.less */
+/* line 89, style.less */
 .btn:hover {
   background: #ededed;
 }
-/* line 94, style.less */
+/* line 93, style.less */
 .btn:active {
-  -webkit-box-shadow: 0 0 0 5px #fff;
-          box-shadow: 0 0 0 5px #fff;
+  -webkit-box-shadow: 0 0 0 2px #fff;
+          box-shadow: 0 0 0 2px #fff;
 }
-/* line 99, style.less */
+/* line 98, style.less */
 .card {
   width: 200px;
   height: 200px;
@@ -132,7 +130,7 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 113, style.less */
+/* line 112, style.less */
 .card:hover > .pic,
 .card > .name,
 .card > .age,
@@ -140,13 +138,13 @@
 .card > .rate > span {
   display: none;
 }
-/* line 121, style.less */
+/* line 120, style.less */
 .card > .pic,
 .card:hover > .name,
 .card:hover > .age {
   display: block;
 }
-/* line 127, style.less */
+/* line 126, style.less */
 .card:hover > .rate,
 .card:hover > .rate > span {
   display: -webkit-box;
@@ -159,7 +157,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 134, style.less */
+/* line 133, style.less */
 .card:hover {
   border: 8px solid;
   display: -webkit-box;
@@ -173,7 +171,7 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-/* line 143, style.less */
+/* line 142, style.less */
 .card > .pic {
   width: 100%;
   height: 100%;
@@ -182,17 +180,17 @@
   background-position: center;
   border-radius: 50%;
 }
-/* line 152, style.less */
+/* line 151, style.less */
 .card > .name {
   grid-column-end: span 2;
   font-size: 24px;
 }
-/* line 157, style.less */
+/* line 156, style.less */
 .card > .age {
   font-size: 1.5rem;
   text-align: center;
 }
-/* line 162, style.less */
+/* line 161, style.less */
 .card > .rate {
   font-size: 14px;
   display: -webkit-box;
@@ -201,7 +199,7 @@
   justify-self: center;
   margin-bottom: 10px;
 }
-/* line 169, style.less */
+/* line 168, style.less */
 .popup-wrapper {
   position: fixed;
   background-color: #2224;
@@ -219,7 +217,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 181, style.less */
+/* line 180, style.less */
 .popup {
   padding: 30px;
   background: #dedede;
@@ -229,7 +227,7 @@
   position: relative;
   display: none;
 }
-/* line 190, style.less */
+/* line 189, style.less */
 .popup > .close {
   position: absolute;
   width: 30px;
@@ -255,23 +253,23 @@
   right: -10px;
   cursor: pointer;
 }
-/* line 208, style.less */
+/* line 207, style.less */
 .popup > .close:hover {
   background: #444360;
   color: #fff;
   border: 1px solid #fff;
 }
-/* line 215, style.less */
+/* line 214, style.less */
 .popup.active {
   display: block;
 }
-/* line 219, style.less */
+/* line 218, style.less */
 .popup-wrapper.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 223, style.less */
+/* line 222, style.less */
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,7 +280,7 @@ form {
           flex-direction: column;
   gap: 12px;
 }
-/* line 228, style.less */
+/* line 227, style.less */
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,23 +291,23 @@ form {
           flex-direction: column;
   gap: 6px;
 }
-/* line 235, style.less */
+/* line 234, style.less */
 h2 {
   margin: 0;
 }
-/* line 239, style.less */
+/* line 238, style.less */
 .popup h2 {
   margin-bottom: 20px;
   text-align: center;
   color: #171039;
   font-size: 20px;
 }
-/* line 246, style.less */
+/* line 245, style.less */
 input {
   background: transparent;
   padding: 0.5em 1em;
 }
-/* line 250, style.less */
+/* line 249, style.less */
 input[type=text],
 input[type=number] {
   border: 1px solid #ffffff;
@@ -545,18 +543,18 @@ input[type=range] {
   }
 }
 */
-/* line 494, style.less */
+/* line 486, style.less */
 input[type=range] {
   -webkit-appearance: none;
   margin: 0;
   width: 100%;
   padding: 10px 0;
 }
-/* line 500, style.less */
+/* line 492, style.less */
 input[type=range]:focus {
   outline: none;
 }
-/* line 503, style.less */
+/* line 495, style.less */
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
@@ -567,7 +565,7 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 25px;
   border: 0px solid #000101;
 }
-/* line 512, style.less */
+/* line 504, style.less */
 input[type=range]::-webkit-slider-thumb {
   -webkit-box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
           box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
@@ -580,11 +578,11 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -3px;
 }
-/* line 523, style.less */
+/* line 515, style.less */
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #bcb9c3;
 }
-/* line 526, style.less */
+/* line 518, style.less */
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 12.8px;
@@ -595,7 +593,7 @@ input[type=range]::-moz-range-track {
   border-radius: 25px;
   border: 0px solid #000101;
 }
-/* line 536, style.less */
+/* line 528, style.less */
 input[type=range]::-moz-range-thumb {
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
   border: 0px solid #000000;
@@ -605,7 +603,7 @@ input[type=range]::-moz-range-thumb {
   background: #444360;
   cursor: pointer;
 }
-/* line 545, style.less */
+/* line 537, style.less */
 input[type=range]::-ms-track {
   width: 100%;
   height: 12.8px;
@@ -616,21 +614,21 @@ input[type=range]::-ms-track {
   border-width: 39px 0;
   color: transparent;
 }
-/* line 555, style.less */
+/* line 547, style.less */
 input[type=range]::-ms-fill-lower {
   background: #bcb9c3;
   border: 0px solid #000101;
   border-radius: 50px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
-/* line 561, style.less */
+/* line 553, style.less */
 input[type=range]::-ms-fill-upper {
   background: #bcb9c3;
   border: 0px solid #000101;
   border-radius: 50px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
-/* line 567, style.less */
+/* line 559, style.less */
 input[type=range]::-ms-thumb {
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
   border: 0px solid #000000;
@@ -640,21 +638,21 @@ input[type=range]::-ms-thumb {
   background: #444360;
   cursor: pointer;
 }
-/* line 576, style.less */
+/* line 568, style.less */
 input[type=range]:focus::-ms-fill-lower {
   background: #bcb9c3;
 }
-/* line 579, style.less */
+/* line 571, style.less */
 input[type=range]:focus::-ms-fill-upper {
   background: #bcb9c3;
 }
-/* line 583, style.less */
+/* line 575, style.less */
 label {
   color: #444360;
   font-size: 15px;
   margin-top: 10px;
 }
-/* line 589, style.less */
+/* line 581, style.less */
 textarea {
   border: 1px solid #ffffff;
   border-radius: 8px;
@@ -662,7 +660,7 @@ textarea {
   padding: 0.5em 1em;
 }
 /* Modern Browsers */
-/* line 598, style.less */
+/* line 590, style.less */
 textarea::-webkit-input-placeholder {
   font-size: 1rem;
 }
@@ -676,42 +674,42 @@ textarea::placeholder {
   font-size: 1rem;
 }
 /* WebKit, Edge */
-/* line 604, style.less */
+/* line 596, style.less */
 textarea::-webkit-input-placeholder {
   font-size: 1rem;
 }
 /* Firefox 4-18 */
-/* line 609, style.less */
+/* line 601, style.less */
 textarea:-moz-placeholder {
   font-size: 1rem;
 }
 /* Firefox 19+ */
-/* line 614, style.less */
+/* line 606, style.less */
 textarea::-moz-placeholder {
   font-size: 1rem;
 }
 /* IE 10-11 */
-/* line 619, style.less */
+/* line 611, style.less */
 textarea:-ms-input-placeholder {
   font-size: 1rem;
 }
 /* Edge */
-/* line 624, style.less */
+/* line 616, style.less */
 textarea::-ms-input-placeholder {
   font-size: 1rem;
 }
-/* line 628, style.less */
+/* line 620, style.less */
 input[type="checkbox"] {
   background: transparent;
 }
-/* line 634, style.less */
+/* line 626, style.less */
 .checkbox {
   width: 100%;
   margin: 15px auto;
   position: relative;
   display: block;
 }
-/* line 639, style.less */
+/* line 631, style.less */
 .checkbox label {
   position: relative;
   min-height: 34px;
@@ -721,14 +719,14 @@ input[type="checkbox"] {
   font-weight: normal;
   cursor: pointer;
 }
-/* line 647, style.less */
+/* line 639, style.less */
 .checkbox label span {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-/* line 652, style.less */
+/* line 644, style.less */
 .checkbox label:before {
   content: '';
   position: absolute;
@@ -744,7 +742,7 @@ input[type="checkbox"] {
   border-radius: 3px;
   border: 2px solid #34C37A;
 }
-/* line 664, style.less */
+/* line 656, style.less */
 .checkbox label:after {
   content: '';
   display: block;
@@ -762,7 +760,7 @@ input[type="checkbox"] {
   top: 12px;
   left: 10px;
 }
-/* line 678, style.less */
+/* line 670, style.less */
 .checkbox input[type="checkbox"] {
   width: auto;
   opacity: 0.00000001;
@@ -770,20 +768,20 @@ input[type="checkbox"] {
   left: 0;
   margin-left: -20px;
 }
-/* line 685, style.less */
+/* line 677, style.less */
 .checkbox input[type="checkbox"]:checked ~ label:before {
   border: 2px solid #34C37A;
 }
-/* line 688, style.less */
+/* line 680, style.less */
 .checkbox input[type="checkbox"]:checked ~ label:after {
   -webkit-transform: rotate(-45deg) scale(1);
           transform: rotate(-45deg) scale(1);
 }
-/* line 692, style.less */
+/* line 684, style.less */
 .checkbox input[type="checkbox"]:focus + label::before {
   outline: 0;
 }
-/* line 699, style.less */
+/* line 691, style.less */
 button[type="submit"] {
   background: #444360;
   border-radius: 8px;
@@ -793,35 +791,40 @@ button[type="submit"] {
   color: #bcb9c3;
   cursor: pointer;
 }
-/* line 709, style.less */
+/* line 701, style.less */
 button[type="submit"]:hover {
   background: #171039;
 }
+/*  ==== media ==== */
 @media (max-width: 768px) {
-  /* line 717, style.less */
+  /* line 713, style.less */
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* line 721, style.less */
+  /* line 717, style.less */
   .card {
     width: 150px;
     height: 150px;
   }
 }
 @media (max-width: 500px) {
-  /* line 729, style.less */
+  /* line 725, style.less */
+  body {
+    margin: 0;
+  }
+  /* line 728, style.less */
   .container {
     grid-template-columns: 1fr;
     margin: 0 auto;
     gap: 40px;
     padding: 70px;
   }
-  /* line 736, style.less */
+  /* line 735, style.less */
   .card {
     width: 200px;
     height: 200px;
   }
-  /* line 741, style.less */
+  /* line 740, style.less */
   .dashboard {
     position: fixed;
     top: 0;
@@ -836,14 +839,14 @@ button[type="submit"]:hover {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  /* line 752, style.less */
+  /* line 751, style.less */
   .wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* line 756, style.less */
+  /* line 755, style.less */
   .btn {
     height: 40px;
     width: 40px;
